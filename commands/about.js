@@ -11,8 +11,8 @@ module.exports = {
       .setThumbnail("https://cdn.discordapp.com/avatars/815999410327781396/7f71df8e2269680681d08e86f8c9279b.png?size=128")
       .setFooter({ text: "CMV Clone was developed by BoredFish https://boredfish.dev", iconURL: "https://cdn.discordapp.com/avatars/388813100964642816/a_f3f3f72adfde2334d6c1d2a36267a6a1.gif?size=128"})
       .addFields([
-        { name: "Bot Version", value: "1.5.0"},
-        { name: "Bot Edition", value: "Lite"},
+        { name: "Bot Version", value: "v2.0.0 ALPHA"},
+        { name: "Bot Edition", value: "Full"},
         { name: "Chad?", value: "true"},
         { name: "Gamer?", value: "true"},
       ])
