@@ -73,7 +73,12 @@ client.on("messageCreate", message => {
   if (!command) return;
 
   try {
+    if (commandName == "mute"){
+      setTimeout(function(){command.execute(message, args, client)}, 1000);
+    }
+    else {
     command.execute(message, args, client);
+    }
   } catch (error) {
     console.log(error);
     message.channel.send(

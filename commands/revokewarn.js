@@ -23,7 +23,10 @@ module.exports = {
       let P3 = message.guild.roles.cache.find((r) => r.name === "P3");
       let P4 = message.guild.roles.cache.find((r) => r.name === "P4");
       let P5 = message.guild.roles.cache.find((r) => r.name === "P5");
-      const member = message.mentions.members.first() || guild.member(args[0]) || guild.member(args)
+      const member =
+      message.mentions.members.first() ||
+      message.guild.members.cache.get(args[0]) ||
+      message.guild.members.cache.get(args);
       if (member) {
         try {
           if (member.roles.cache.some((r) => r.name === "P1")) {
